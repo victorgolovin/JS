@@ -19,3 +19,14 @@
   width: 1440
  }
  */
+
+  /*Выражения 
+
+  'abc' // 'abc'
+  10 // 10
+  a + b // Сумма "a" и "b"
+  'Good ' + 'Evening' // Good Evening
+  a <= b || c !== d  // true или false
+  myFunction(c,d)  // результат функции */
+
+ 
