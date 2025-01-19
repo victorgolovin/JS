@@ -29,4 +29,29 @@
   a <= b || c !== d  // true или false
   myFunction(c,d)  // результат функции */
 
- 
+ // let myName
+
+ // console.log(myName)
+
+ // myName = 'Victor'
+
+ // console.log(myName)
+
+ // const myName = 'Victor'
+
+ // console.log(myName)
+
+ // Ссылочный тип Object
+
+ const objectA = {
+  a: 10,
+  b: true
+ }
+
+ const copyOfA = objectA
+
+ copyOfA.a = 20
+ copyOfA.c = 'abc'
+
+ console.log(objectA)
+ console.log(copyOfA)
