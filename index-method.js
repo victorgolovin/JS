@@ -33,18 +33,104 @@
 //     }
 // }
 
+// const post = {
+//     title: 'My post',
+//     likeQty: 5
+// }
 
-const post = {
-    title: 'My post',
-    likeQty: 5
+// JSON.stringify(post)
+
+// console.log(post)
+
+// const postStringifaed = JSON.stringify(post)
+
+// JSON.parse(postStringifaed)
+
+// console.log(postStringifaed)
+
+// ----------------------------------------------------
+
+// Мутации в JS
+// Значения примитивных данных
+
+// const a = 10
+
+// let b = a
+
+// b = 30
+
+// console.log(a) // 10
+// console.log(b) // 30
+
+// Значения ссылочного типа 
+
+// const person = {
+//     name: 'Bob',
+//     age: 20
+// }
+
+// person.age = 22
+// person.isAdult = true
+
+// console.log(person.age) // 22
+// console.log(person.isAdult) // true
+
+// Пример выше мутации обьекта
+
+// Ниже мутирование копий
+
+// const person = {
+//     name: 'Bob',
+//     age: 25
+// }
+
+// const person2 = person
+
+// person2.age = 26
+// person2.isAdult = true
+
+// console.log(person.age) // 26
+// console.log(person.isAdult) // true
+
+// Как избежать мутаций
+
+// const person = {
+//     name: 'Bob',
+//     age: 25
+// }
+
+// const person2 = Object.assign({}, person)
+
+// person2.age = 26
+
+// console.log(person.age) // 25
+// console.log(person2.age) // 26
+
+// Второй вариант 
+
+// const person = {
+//     name: 'Bob',
+//     age: 25
+// }
+
+// const person2 = {...person}
+
+// person2.name = 'Alice'
+
+// console.log(person.name) // Bob
+// console.log(person2.name) // Alice
+
+// Третий способ 
+
+const person = {
+    name: 'Bob',
+    age: 25
 }
 
-JSON.stringify(post)
+const person2 = JSON.parse(JSON.stringify(person))
 
-console.log(post)
+person2.name = 'Alice'
 
-const postStringifaed = JSON.stringify(post)
+console.log(person.name) // Bob
+console.log(person2.name) // Alice
 
-JSON.parse(postStringifaed)
-
-console.log(postStringifaed)
