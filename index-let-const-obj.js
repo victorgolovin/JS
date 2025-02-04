@@ -195,13 +195,13 @@
 
 // Или сокращенный вариант который чаще всего используется
 
-const name = 'Victor'
-const postQty = 25
+// const name = 'Victor'
+// const postQty = 25
 
-const useProfile = {
-  name,
-  postQty,
-  hasSignedAgreement: false
-}
+// const useProfile = {
+//   name,
+//   postQty,
+//   hasSignedAgreement: false
+// }
 
-console.log(useProfile) // { name: 'Victor', postQty: 25, hasSignedAgreement: false }
+// console.log(useProfile) // { name: 'Victor', postQty: 25, hasSignedAgreement: false }

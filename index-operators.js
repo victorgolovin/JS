@@ -176,19 +176,19 @@
 
 // Обьединение обьектов с помощью ...
 
-const buttonInfo = {
-    text: 'Buy'
-}
+// const buttonInfo = {
+//     text: 'Buy'
+// }
 
-const buttonStyle = {
-    color: 'yellow',
-    width: 200,
-    height: 300
-}
+// const buttonStyle = {
+//     color: 'yellow',
+//     width: 200,
+//     height: 300
+// }
 
-const button = {
-    ...buttonInfo,
-    ...buttonStyle
-}
+// const button = {
+//     ...buttonInfo,
+//     ...buttonStyle
+// }
 
-console.table(button)
+// console.table(button)

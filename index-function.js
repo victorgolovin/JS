@@ -103,8 +103,134 @@
 
 // В теле функции вызывается другая функция, ниже еще пример
 
-function printMyName() {
-    console.log('Victor')
+// function printMyName() {
+//     console.log('Victor')
+// }
+
+// setTimeout(printMyName, 1000)
+
+// ----------------------------------------------------
+
+// Функциональные выражения
+
+// Обьявленная функция vs функциональное выражение 
+
+// Обьявленная функция
+
+// function myFn(a, b) {
+//     let c 
+//     a = a + 1
+//     c = a + b
+
+//     return c
+// }
+
+// Функциональное выражение 
+
+// function(a, b) {
+//     let c 
+//     a = a + 1
+//     c = a + b
+
+//     return c
+// }
+
+// Функциональное выражение всегда анонимные
+
+// Присваивание функционального выражение переменной
+
+// const myFunction = function(a, b) {
+//     let c
+//     a = a + 1
+//     c = a + b
+    
+//     return c 
+// }
+
+// console.log(myFunction(4, 5))
+
+// // Функциональное выражение в вызове другой функции
+
+// setTimeout(function() {
+//     console.log('Delay message')
+// }, 1000)
+
+// ----------------------------------------------------
+
+// Стрелочные функции
+
+// (a, b) => {
+//     let c
+//     a = a + 1
+//     c = a + b
+
+//     return c
+// }
+
+// Стрелочная функция является - выражением и они ВСЕГДА анонимные 
+
+// Как дать имя стрелочной функции?
+
+// const myFunction = (a, b) => {
+//     a = a + 1
+//     c = a + b
+
+//     return c
+// }
+
+// myFunction (5, 3)
+
+// Стрелочные функции в вызове другой функции
+
+// setTimeout(() => {
+//     console.log('Delay message')
+// }, 1000)
+
+// Сокращения в стрелочных функциях 
+
+// Если в стрелочных функциях ОДИН параметр, то круглые скобки можно опустить
+
+// a => {
+//     // Тело функции
+// }
+
+// // Фигурные скобки можно опустить если тело функции состоит из одного выражения 
+
+// (a, b) => a + b 
+
+// В этом случае стрелочная функция НЕЯВНО (автоматически) возвращает результат выражения
+
+// ----------------------------------------------------
+
+// Значение параметров функции по умолчанию
+
+// function multByFactor(value, multiplier = 1) {
+//     return value * multiplier
+// }
+
+// multByFactor(10, 2) // 20
+// multByFactor(5) // 5
+
+const multByFactor = (value, multiplier = 1)=> {
+    return value * multiplier
 }
 
-setTimeout(printMyName, 1000)
+multByFactor (5, 3) // 15
+
+console.log(multByFactor(5, 3))
+
+// Ниже второй пример использования фунциии по умолчанию
+
+const newPost = (post, addedAt = Date()) => ({
+    ...post,
+    addedAt,
+})
+
+const firstPost = {
+    ad: 1,
+    autor: 'Victor',
+}
+
+newPost(firstPost)
+
+console.log(newPost(firstPost))

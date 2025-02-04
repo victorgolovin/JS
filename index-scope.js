@@ -56,14 +56,14 @@
 
 // 'use strict' - запрещает использование не обьявленныъ переменных
 
-'use strict'
+// 'use strict'
 
-function myFn() {
-    a = true // ReferenceError: a is not defined
-    console.log(a) 
-}
+// function myFn() {
+//     a = true // ReferenceError: a is not defined
+//     console.log(a) 
+// }
 
-myFn()
+// myFn()
 
-console.log(a) 
+// console.log(a) 
 
