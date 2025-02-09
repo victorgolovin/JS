@@ -12,26 +12,26 @@
 
 // TRY/CATCH поможет обнаружить ошибку
 
-try {
-    // Выполнение блока кода
-} catch (error) {
-    // Этот блок выполняется в случае 
-    // возникновения ошибок в блоке try
-}
+// try {
+//     // Выполнение блока кода
+// } catch (error) {
+//     // Этот блок выполняется в случае 
+//     // возникновения ошибок в блоке try
+// }
 
 // Ниже пример
 
-const fnWithError = () => {
-    throw new Error('Some Error')
-}
+// const fnWithError = () => {
+//     throw new Error('Some Error')
+// }
 
-try {
-    fnWithError()
-} catch (error) {
-    console.error(error)
-    console.log(error.message)
-}
+// try {
+//     fnWithError()
+// } catch (error) {
+//     console.error(error)
+//     console.log(error.message)
+// }
 
-console.log('Continue...')
+// console.log('Continue...')
 
 
