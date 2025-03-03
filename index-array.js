@@ -48,3 +48,5 @@ console.log(myArray[1]) // true
 
 console.log(myArray.length) // 3
 
+
+
